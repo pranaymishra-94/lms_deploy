@@ -2,7 +2,6 @@ import { Menu, School } from "lucide-react";
 import React, { useEffect } from "react";
 import { Button } from "./button";
 import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
-import DarkMode from "@/darkMode";
 import {
   Sheet,
   SheetClose,
@@ -26,6 +25,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useLogoutUserMutation } from "@/features/api/authApi";
 import { toast } from "sonner";
 import { useSelector } from "react-redux";
+import DarkMode from "@/DarkMode";
 
 const Navbar = () => {
   const { user } = useSelector((store) => store.auth);
